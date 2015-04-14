@@ -42,7 +42,7 @@ class EasilyView
 		$ev = '\Easily\EasilyView';
 
 		if(file_exists($file)) {
-			self::$partial = APP_DIR . 'app' . DS . 'view' . DS . $view . '.php';
+			self::$partial = APP_DIR . 'src' . DS . 'App' . DS . 'View' . DS . $view . '.php';
 			self::$data = $data;
 			include($file);
 		}
