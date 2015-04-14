@@ -1,5 +1,5 @@
 {
-    "name": "easily/easily",
+    "name": "andrewesteves/easily",
     "description": "Easily MVC CMS for PHP 5.5+",
     "type": "library",
     "keyword": ["cms", "framework"],
@@ -20,7 +20,7 @@
         "psr-4": {
             "Easily\\": "vendor/easily/easily/src",
             "EasilyTest\\": "vendor/easily/easily/tests",
-            "App\\": "app"
+            "App\\": "src/App"
         }
     },
     "minimum-stability": "dev"
