@@ -20,7 +20,7 @@
         "psr-4": {
             "Easily\\": "vendor/easily/easily/src",
             "EasilyTest\\": "vendor/easily/easily/tests",
-            "App\\": "app"
+            "App\\": "src/App"
         }
     },
     "minimum-stability": "dev"
