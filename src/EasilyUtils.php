@@ -23,7 +23,7 @@ class EasilyUtils
 			$model = str_replace('Controller', '', $model);
 			$model = str_replace('Model', '', $model);
 		}
-		$model = "App\\Model\\" . $model . "Model";
+		$model = "App\\Model\\" . ucfirst($model) . "Model";
 		return new $model;
 	}
 
