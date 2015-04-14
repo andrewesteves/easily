@@ -105,6 +105,8 @@ class Easily
 	 */
 	public function init()
 	{
+		session_cache_limiter();
+		session_start();
 		$uriParam = $this->baseUri();
 		$match = false;
 		$index = null;
