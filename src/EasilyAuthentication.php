@@ -74,7 +74,7 @@ class EasilyAuthentication
 	 *
 	 * @param string password
 	 */
-	public function passwordHash($password)
+	public static function passwordHash($password)
 	{
 		return password_hash($password, PASSWORD_DEFAULT, $this->options);
 	}
