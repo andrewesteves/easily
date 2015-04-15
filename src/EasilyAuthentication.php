@@ -12,7 +12,7 @@ class EasilyAuthentication
 	/**
 	 * var array Password_hash options
 	 */
-	private $options = [
+	private static $options = [
 		'salt' => SALT, 
 		'cost' => 11
 	];
@@ -76,7 +76,7 @@ class EasilyAuthentication
 	 */
 	public static function passwordHash($password)
 	{
-		return password_hash($password, PASSWORD_DEFAULT, $this->options);
+		return password_hash($password, PASSWORD_DEFAULT, self::$options);
 	}
 
 	/**
